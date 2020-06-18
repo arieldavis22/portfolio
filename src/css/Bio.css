@@ -1,0 +1,9 @@
+.bio {
+    text-align: center;
+}
+
+p {
+    position: relative;
+    bottom: 150px;
+    left: 100px;
+}

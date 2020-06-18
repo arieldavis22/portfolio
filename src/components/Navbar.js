@@ -9,7 +9,8 @@ const Navbar = () => {
         anime({
             targets: '.navbar',
             translateX: 1000,
-            easing: 'spring(1, 80, 15, 0)'
+            easing: 'easeOutElastic(1, 1)',
+            duration: 3001
         })
     })
     return (  

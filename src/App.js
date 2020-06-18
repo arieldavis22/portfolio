@@ -4,15 +4,16 @@ import Bio from './components/Bio';
 import Project from './components/Project';
 import Social from './components/Social';
 import Contact from './components/Contact';
-import RubberBand from 'react-reveal/RubberBand';
+import Fade from 'react-reveal/Fade';
+import './css/App.css'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <RubberBand>
+      <Fade bottom>
         <Bio />
-      </RubberBand>
+      </Fade>
       <Project />
       <Social />
       <Contact />
