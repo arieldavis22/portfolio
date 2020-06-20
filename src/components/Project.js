@@ -13,7 +13,7 @@ const Project = () => {
             <div className='wrapper'>
                 <Slider>
                     <div>
-                        <Image src={require('../img/dl_logo.png')} size='large' />
+                        <Image src={require('../img/dl_logo.png')} size='huge' />
                     </div>
                     <div>
                         <Image src={require('../img/gt_logo.png')} size='large'/>

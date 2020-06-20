@@ -3,7 +3,10 @@ import React from 'react'
 const Social = () => {
     return (  
         <div>
-            Social
+            Social Media
+            <div>
+                Linkedin, Github, Twitter
+            </div>
         </div>
     );
 }
