@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Fade bottom>
         <Bio />
+        <Project />
       </Fade>
-      <Project />
       <Social />
       <Contact />
     </div>
