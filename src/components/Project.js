@@ -1,38 +1,24 @@
 import React from 'react'
-import { Card, Image } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import '../css/Project.css'
+
 const Project = () => {
     return (  
-        <div>
-            <Card>
-                <Image src={require('../img/dl_logo.png')} wrapped ui={false} />
-                <Card.Content>
-                    <Card.Header>Dev Learning</Card.Header>
-                    <Card.Meta>May 2020</Card.Meta>
-                    <Card.Description>
-                        An educational coding platform geared and structured for high school students.
-                    </Card.Description>
-                </Card.Content>
-            </Card>
-            <Card>
-                <Image src={require('../img/gt_logo.png')} wrapped ui={false} />
-                <Card.Content>
-                    <Card.Header>Gem Trader</Card.Header>
-                    <Card.Meta>March 2020</Card.Meta>
-                    <Card.Description>
-                        An interactive game that mimics the concept of cryptocurrency.
-                    </Card.Description>
-                </Card.Content>
-            </Card>
-            <Card>
-                <Image src={require('../img/fp_logo.png')} wrapped ui={false} />
-                <Card.Content>
-                    <Card.Header>Forcast Planner</Card.Header>
-                    <Card.Meta>April 2020</Card.Meta>
-                    <Card.Description>
-                        A calendar application for planning based off of weather reports.
-                    </Card.Description>
-                </Card.Content>
-            </Card>
+        <div className='wrapper'>
+            <Slider>
+                <div>
+                    <Image src={require('../img/dl_logo.png')} size='large' />
+                    <h1>Test</h1>
+                </div>
+                <div>
+                    <Image src={require('../img/gt_logo.png')} size='large'/>
+                </div>
+                <div>
+                    <Image src={require('../img/fp_logo.png')} size='large' />
+                </div>
+            </Slider>
         </div>
     );
 }
