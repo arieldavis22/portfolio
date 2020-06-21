@@ -14,8 +14,21 @@ class Contact extends Component {
         })
     }
 
-    handleSubmit = () => {
-        console.log("working")
+    sendFeedback = (templateId, vars) => {
+        window.emailjs.send(
+            'gmail', templateId,
+            vars
+            ).then(res => {
+                console.log('Email successfully sent!')
+            })
+            // Handle errors here however you like, or use a React error boundary
+            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
+
+    handleSubmit = event => {
+        const templateId = 'template_Gwj9uOap'
+
+        this.sendFeedback(templateId, {message_html: this.state.message, from_name: this.state.fullName, reply_to: this.state.email})
     }
 
     render() {
@@ -23,7 +36,7 @@ class Contact extends Component {
         return (
             <div>
                 Contact
-                <Form>
+                <Form onSubmit={this.handleSubmit}>
                     <Form.Field >
                         <label>Full Name</label>
                         <input name='fullName' placeholder=' Enter Full Name' onChange={this.handleChange} />
