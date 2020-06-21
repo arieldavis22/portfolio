@@ -1,11 +1,45 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { Button, Form, TextArea } from 'semantic-ui-react'
 
-const Contact = () => {
-    return (  
-        <div>
-            Contact
-        </div>
-    );
+class Contact extends Component {
+    state = {
+        fullName: '',
+        email: '',
+        message: ''
+    }
+
+    handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit = () => {
+        console.log("working")
+    }
+
+    render() {
+        console.log(this.state)
+        return (
+            <div>
+                Contact
+                <Form>
+                    <Form.Field >
+                        <label>Full Name</label>
+                        <input name='fullName' placeholder=' Enter Full Name' onChange={this.handleChange} />
+                    </Form.Field>
+                    <Form.Field >
+                        <label>Email</label>
+                        <input name='email' placeholder='Enter Email' onChange={this.handleChange}/>
+                    </Form.Field>
+                    <Form.Field >
+                        <label>Message</label>
+                        <TextArea name='message' placeholder='Message' onChange={this.handleChange}/>
+                    </Form.Field>
+                    <Button type='submit'>Submit</Button>
+                </Form>
+            </div>
+        )
+    }
 }
-
 export default Contact;
