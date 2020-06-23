@@ -9,15 +9,17 @@ import './css/App.css'
 
 function App() {
   return (
-    <div>
-      <Fade bottom>
-        <Navbar />
-        <Bio />
-        <Project />
-      </Fade>
-      <Social />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <div className="main">
+        <Fade bottom>
+          <Bio />
+          <Project />
+        </Fade>
+        <Social />
+        <Contact />
+      </div>
+    </>
   );
 }
 

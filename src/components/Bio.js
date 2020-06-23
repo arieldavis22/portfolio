@@ -5,7 +5,7 @@ import '../css/Bio.css'
 const Bio = () => {
 
     return (  
-        <div className="bio">
+        <div className="bio container">
             <Image 
             src={require('../img/ariel_davis.jpg')} 
             size='medium' 

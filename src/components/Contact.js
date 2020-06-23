@@ -34,7 +34,7 @@ class Contact extends Component {
     render() {
         console.log(this.state)
         return (
-            <div>
+            <div className='container'>
                 Contact
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Field >

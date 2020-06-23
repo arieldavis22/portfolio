@@ -3,7 +3,7 @@ import { Header, Icon, Menu } from 'semantic-ui-react'
 
 const Social = () => {
     return (  
-        <div>
+        <div className='container'>
             Social Media
             <div>
                 <Menu text>

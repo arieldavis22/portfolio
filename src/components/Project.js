@@ -7,9 +7,10 @@ import '../css/Project.css'
 const Project = () => {
     return (  
         <>
-        <div className='desc'>
-            <p>Recent and relevent projects that Ariel Davis has worked on include:</p>
-        </div>
+        <div className='container'>
+            <div className='desc'>
+                <p>Recent and relevent projects that Ariel Davis has worked on include:</p>
+            </div>
             <div className='wrapper'>
                 <Slider>
                     <div>
@@ -23,6 +24,8 @@ const Project = () => {
                     </div>
                 </Slider>
             </div>
+        </div>
+        
         </>
     );
 }
