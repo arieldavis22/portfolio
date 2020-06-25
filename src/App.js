@@ -15,9 +15,9 @@ function App() {
         <Fade bottom>
           <Bio />
           <Project />
+          <Social />
+          <Contact />
         </Fade>
-        <Social />
-        <Contact />
       </div>
     </>
   );
