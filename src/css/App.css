@@ -1,8 +1,9 @@
 .main {
-    width: 1225px;
+    width: 1250px;
     border: 2px solid green;
-    padding: 50px;
-    margin: 35px;
+    padding: 60px;
+    margin: 30px;
+    margin-left: 70px;
 }
 
 .container {
