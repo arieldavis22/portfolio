@@ -2,18 +2,21 @@ import React, { Component } from 'react';
 import { Button, Form, TextArea } from 'semantic-ui-react'
 
 class Contact extends Component {
+    //state for contact information
     state = {
         fullName: '',
         email: '',
         message: ''
     }
 
+    //handles change in the form
     handleChange = event => {
         this.setState({
             [event.target.name]: event.target.value
         })
     }
 
+    //uses EmailJS to send email information request
     sendFeedback = (templateId, vars) => {
         window.emailjs.send(
             'gmail', templateId,
@@ -21,10 +24,11 @@ class Contact extends Component {
             ).then(res => {
                 console.log('Email successfully sent!')
             })
-            // Handle errors here however you like, or use a React error boundary
+            // Handle errors here, or use a React error boundary
             .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     }
 
+    //uses sendFeedback function to send off request
     handleSubmit = event => {
         const templateId = 'template_Gwj9uOap'
 
@@ -32,10 +36,11 @@ class Contact extends Component {
     }
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         return (
             <div className='container'>
                 Contact
+                {/* form to handle collection of information */}
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Field >
                         <label>Full Name</label>
