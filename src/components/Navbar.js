@@ -5,6 +5,7 @@ import '../css/Navbar.css'
 
 const Navbar = () => {
     
+    //anime.js transition from left side of screen to right
     useEffect(() => {
         anime({
             targets: '.navbar',
@@ -14,6 +15,7 @@ const Navbar = () => {
         })
     })
     return (  
+        //all buttons that will lead to different componenets
         <div className="navbar">
             <button>Bio</button>
             <button>Projects</button>
