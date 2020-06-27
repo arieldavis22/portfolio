@@ -8,11 +8,13 @@ const Bio = () => {
 
     return (  
         <div className="bio container">
+            {/* image for my face */}
             <Image 
             src={require('../img/ariel_davis.jpg')} 
             size='medium' 
             circular/>
             <div>
+                {/* main content of my bio */}
                 <p>
                     Full stack web developer with a passion for expansive learning. <br/> 
                     Experience in Ruby on Rails, JavaScript, and React tied to robotics and programming <br/>
