@@ -1,11 +1,13 @@
 import React from 'react'
 import { Header, Icon, Menu } from 'semantic-ui-react'
+//TODO: make into object and iterate through it
 
 const Social = () => {
     return (  
         <div className='container'>
             Social Media
             <div>
+                {/* uses semantic ui menu to make clickable links to profiles */}
                 <Menu text>
                     <Menu.Item link as='a' href='https://github.com/arieldavis22' target="_blank">
                         <Header as='h2'>
