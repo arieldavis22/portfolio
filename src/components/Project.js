@@ -6,6 +6,8 @@ import '../css/Project.css'
 
 const Project = () => {
 
+    //project content 
+    //TODO: move into seperate file when working
     const content = [
         {
             name: 'test1',
@@ -27,7 +29,9 @@ const Project = () => {
                 <p>Recent and relevent projects that Ariel Davis has worked on include:</p>
             </div>
             <div className='wrapper'>
+                {/* slider using React Animated Slider to showcase different projects */}
                 <Slider>
+                    {/* uses content from the content object, iterates through it */}
                     {content.map((item, index) => (
                         <div
                         key={index}
