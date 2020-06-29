@@ -13,6 +13,7 @@ const Box = (props) => {
     useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
 
     return (
+      <>
         <mesh
             {...props}
             ref={mesh}
@@ -23,6 +24,7 @@ const Box = (props) => {
             <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
             <meshStandardMaterial attach="material" color={hovered ? 'hotpink' : 'orange'} />
         </mesh>
+      </>
     )
 }
 
