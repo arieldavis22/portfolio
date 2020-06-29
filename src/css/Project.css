@@ -1,15 +1,20 @@
+.container {
+    position: relative;
+    left: 10px;
+    top: 170px;
+}
+
 .wrapper {
-    max-width: 1000px;
+    max-width: 700px;
     box-sizing: border-box;
     padding: 0 20px;
     margin: auto;
 }
 
 .desc {
-    text-align: left;
+    text-align: center;
     position: relative;
-    top: 150px;
-    left: 300px;
+    top: 130px;
 }
 
 /* .slider-wrapper {

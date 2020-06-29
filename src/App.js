@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Bio from './components/Bio';
-// import Project from './components/Project';
+// import Bio from './components/Bio';
+import Project from './components/Project';
 // import Social from './components/Social';
 // import Contact from './components/Contact';
 // import Fade from 'react-reveal/Fade';
@@ -22,10 +22,10 @@ function App() {
         </Canvas>
       </div>
       <div className="main">
-          <Bio />
-          {/* <Project />
-          <Social />
-          <Contact /> */}
+          {/* <Bio /> */}
+          <Project />
+          {/* <Social /> */}
+          {/* <Contact /> */}
       </div>
     </>
   );
