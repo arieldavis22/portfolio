@@ -14,7 +14,9 @@ function App() {
     <>
       <Navbar />
       <div className='back'>
-      <Canvas colorManagement>
+      <Canvas 
+      colorManagement
+      pixelRatio={3}>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <Box position={[0, 0, 0]} />

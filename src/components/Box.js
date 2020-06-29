@@ -14,7 +14,7 @@ const Box = (props) => {
         <mesh
             {...props}
             ref={mesh}>
-            <boxBufferGeometry attach="geometry" args={[4, 4, 4]} />
+            <boxBufferGeometry attach="geometry" args={[6, 6, 6]} />
             <meshStandardMaterial attach="material" color={'orange'} />
         </mesh>
       </>
