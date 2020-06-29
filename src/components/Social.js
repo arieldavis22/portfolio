@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header, Icon, Menu } from 'semantic-ui-react'
+import '../css/Social.css'
 //TODO: make into object and iterate through it
 
 const Social = () => {
@@ -8,7 +9,7 @@ const Social = () => {
             Social Media
             <div>
                 {/* uses semantic ui menu to make clickable links to profiles */}
-                <Menu text>
+                <Menu text vertical style={{left: '100px'}}>
                     <Menu.Item link as='a' href='https://github.com/arieldavis22' target="_blank">
                         <Header as='h2'>
                             <Icon.Group size='large'>

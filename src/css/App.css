@@ -7,12 +7,6 @@
     position: relative;
 }
 
-.container {
-    /* width: 1100px;
-    border: 2px solid yellow;
-    padding: 30px; */
-}
-
 .back {
     position: absolute;
     z-index: -1;
