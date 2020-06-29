@@ -8,6 +8,7 @@ const Bio = () => {
         <div className="bio container">
             {/* image for my face */}
             <Image 
+            className='image-container'
             src={require('../img/ariel_davis.jpg')} 
             size='medium' 
             circular/>

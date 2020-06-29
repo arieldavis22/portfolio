@@ -14,13 +14,12 @@ function App() {
     <>
       <Navbar />
       <div className='back'>
-      <Canvas 
-      colorManagement
-      pixelRatio={3}>
-                <ambientLight />
-                <pointLight position={[10, 10, 10]} />
-                <Box position={[0, 0, 0]} />
-      </Canvas>
+        <Canvas 
+        colorManagement>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <Box position={[0, 0, 0]} />
+        </Canvas>
       </div>
       <div className="main">
           <Bio />
